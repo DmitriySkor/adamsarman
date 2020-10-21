@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Hello, world!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="contain-top__line">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="top__line">
+
+                    <div class="top__line_icon">
+                        <a href="#" title="Идея">
+                            <i class="as-idea"></i>
+                        </a>
+                        <a href="#" title="Визуализация">
+                            <i class="as-visualization"></i>
+                        </a>
+                        <a href="#" title="Материализация">
+                            <i class="as-materialization"></i>
+                        </a>
+                        <a href="#" title="Оптимизация">
+                            <i class="as-optimization"></i>
+                        </a>
+                        <a href="#" title="Рост">
+                            <i class="as-height"></i>
+                        </a>
+                        <a href="#" title="Инвестирование">
+                            <i class="as-marketplace"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contain-tabs__link">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="tabs__link">
+                    <a id="tabs-link-1" class="tabs_link" href="#" title="Клиентам">Клиентам</a>
+                    <a id="tabs-link-2" class="tabs_link" href="#" title="Партнерам">Партнерам</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="tabs-info-1" class="contain-tabs__info">
+    <div id="tabs_info_open_1">
+        <a href="#">
+            <img src="img/ico-menu-down.svg" alt="img">
+        </a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="menu__tabs_info">
+                    <a id="service_link_1" class="menu__tabs_info-a" href="find_production.html" title="Найти производство">
+                        <i class="as-findproduction"></i>
+                        Найти производство
+                    </a>
+                    <a id="service_link_2" class="menu__tabs_info-a" href="order_batch.html" title="Заказать партию">
+                        <i class="as-orderbatch"></i>
+                        Заказать партию
+                    </a>
+                    <a id="service_link_3" class="menu__tabs_info-a" href="deliver_cargo.html" title="Доставить груз">
+                        <i class="as-delivercargo"></i>
+                        Доставить груз
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="tabs-info-2" class="contain-tabs__info">
+    <div id="tabs_info_open_2">
+        <a href="#">
+            <img src="img/ico-menu-down.svg" alt="img">
+        </a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="menu__tabs_info">
+                    <a id="service_link_4" class="menu__tabs_info-a" href="register_production.html" title="Зарегистрировать производство">
+                        <i class="as-registerproduction"></i>
+                        Зарегистрировать производство
+                    </a>
+                    <a id="service_link_5" class="menu__tabs_info-a" href="register_tm.html" title="Зарегистрировать ТМ">
+                        <i class="as-registertm"></i>
+                        Зарегистрировать ТМ
+                    </a>
+                    <a id="service_link_6" class="menu__tabs_info-a" href="market_place.html" title="Маркетплейс">
+                        <i class="as-marketplace"></i>
+                        Маркетплейс
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("tabs-link-1").onclick = function (e) {
+        e.preventDefault();
+        document.getElementById("tabs-link-1").classList.add("active");
+        document.getElementById("tabs-link-2").classList.remove("active");
+
+        document.getElementById("tabs-info-1").classList.add("active", "animate__animated", "animate__fadeInRight");
+
+        function deleteAnimation() {
+            document.getElementById("tabs-info-1").classList.remove("animate__animated", "animate__fadeInRight");
+        }
+
+        setTimeout(deleteAnimation, 750);
+
+        document.getElementById("tabs-info-2").classList.remove("active");
+    }
+
+
+    document.getElementById("tabs-link-2").onclick = function (e) {
+        e.preventDefault();
+        document.getElementById("tabs-link-2").classList.add("active");
+        document.getElementById("tabs-link-1").classList.remove("active");
+
+        document.getElementById("tabs-info-2").classList.add("active", "animate__animated", "animate__fadeInRight");
+
+        function deleteAnimation() {
+            document.getElementById("tabs-info-2").classList.remove("animate__animated", "animate__fadeInRight");
+        }
+
+        setTimeout(deleteAnimation, 750);
+
+        document.getElementById("tabs-info-1").classList.remove("active");
+    }
+
+
+    // let serviceLink = document.querySelectorAll(".menu__tabs_info-a");
+    // //console.log(serviceLink)
+    // for (x = 0; x < serviceLink.length; x++) {
+    //     console.log(x);
+    //     document.querySelectorAll('.menu__tabs_info-a')[x].onclick = function () {
+    //         //e.preventDefault();
+    //         let link = document.querySelectorAll(".menu__tabs_info-a");
+    //         for (i = 0; i < link.length; i++) {
+    //             document.querySelectorAll(".menu__tabs_info-a")[i].classList.remove("active");
+    //         }
+    //         (this).classList.add("active");
+    //     }
+    // }
+
+    document.getElementById("tabs_info_open_1").onclick = function (e){
+        e.preventDefault()
+        document.getElementById("tabs-info-1").classList.toggle("open");
+        document.querySelector("body").classList.toggle("fixed");
+    }
+
+    document.getElementById("tabs_info_open_2").onclick = function (e){
+        e.preventDefault()
+        document.getElementById("tabs-info-2").classList.toggle("open");
+        document.querySelector("body").classList.toggle("fixed");
+    }
+
+</script>
+<div class="contain-first">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <a class="service__button" href="#">
+                    Make order
+                </a>
+                <div class="block block-align-center-center" style="height: auto; min-height: calc(100vh - 75px); position: relative; z-index: 2;">
+                    <div class="block__head align-text-center">
+                        <h2>Factory scanner –</h2>
+                    </div>
+                    <div class="block__slag align-text-center">
+                        Зарегистрировать ТМ
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contain-links">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="links">
+                    <div class="links__info">
+                        <div class="links__info_head">
+                            Global idea
+                        </div>
+                        <div class="links__info_link">
+                            <ul>
+                                <li><a href="#">Global idea</a></li>
+                                <li><a href="#">Visualization</a></li>
+                                <li><a href="#">Materialization</a></li>
+                                <li><a href="#">Optimization</a></li>
+                                <li><a href="#">Multiplication</a></li>
+                                <li><a href="#">Marketplace</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links__info">
+                        <div class="links__info_head">
+                            Visualization
+                        </div>
+                        <div class="links__info_link">
+                            <ul>
+                                <li><a href="#">Global idea</a></li>
+                                <li><a href="#">Visualization</a></li>
+                                <li><a href="#">Materialization</a></li>
+                                <li><a href="#">Optimization</a></li>
+                                <li><a href="#">Multiplication</a></li>
+                                <li><a href="#">Marketplace</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links__info">
+                        <div class="links__info_head">
+                            Materialization
+                        </div>
+                        <div class="links__info_link">
+                            <ul>
+                                <li><a href="#">Global idea</a></li>
+                                <li><a href="#">Visualization</a></li>
+                                <li><a href="#">Materialization</a></li>
+                                <li><a href="#">Optimization</a></li>
+                                <li><a href="#">Multiplication</a></li>
+                                <li><a href="#">Marketplace</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links__info">
+                        <div class="links__info_head">
+                            Optimization
+                        </div>
+                        <div class="links__info_link">
+                            <ul>
+                                <li><a href="#">Global idea</a></li>
+                                <li><a href="#">Visualization</a></li>
+                                <li><a href="#">Materialization</a></li>
+                                <li><a href="#">Optimization</a></li>
+                                <li><a href="#">Multiplication</a></li>
+                                <li><a href="#">Marketplace</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links__info">
+                        <div class="links__info_head">
+                            Multiplication
+                        </div>
+                        <div class="links__info_link">
+                            <ul>
+                                <li><a href="#">Global idea</a></li>
+                                <li><a href="#">Visualization</a></li>
+                                <li><a href="#">Materialization</a></li>
+                                <li><a href="#">Optimization</a></li>
+                                <li><a href="#">Multiplication</a></li>
+                                <li><a href="#">Marketplace</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links__info">
+                        <div class="links__info_head">
+                            Marketplace
+                        </div>
+                        <div class="links__info_link">
+                            <ul>
+                                <li><a href="#">Global idea</a></li>
+                                <li><a href="#">Visualization</a></li>
+                                <li><a href="#">Materialization</a></li>
+                                <li><a href="#">Optimization</a></li>
+                                <li><a href="#">Multiplication</a></li>
+                                <li><a href="#">Marketplace</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_1" class="overlay">
+    <div class="contain-popup__small">
+        <div id="closed_modal_1" class="popup__closed">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="popup__small">
+            <div class="popup__small_head">
+                Оставьте заявку
+            </div>
+            <div class="popup__small_slag">
+                Мы свяжемся с вами и обсудим
+                варианты сотрудничества
+            </div>
+            <div class="popup__small_form">
+                <form action="#">
+                    <div class="form__line">
+                        <label for="in_name" class="form__line_label"></label>
+                        <input id="in_name" class="form__line_input" placeholder="Ваше имя">
+                    </div>
+                    <div class="form__line">
+                        <label for="in_phone" class="form__line_label"></label>
+                        <input id="in_phone" class="form__line_input" placeholder="Ваш телефон">
+                    </div>
+                    <div class="form__line">
+                        <label for="in_mail" class="form__line_label"></label>
+                        <input id="in_mail" class="form__line_input" placeholder="Ваш E-Mail">
+                    </div>
+                    <div class="form__line">
+                        <button type="submit" class="form__line_button">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_2" class="overlay">
+    <div class="contain-popup__big">
+        <div id="closed_modal_2" class="popup__closed">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="popup__big">
+            <div class="popup__big_head">
+                Оставьте заявку
+            </div>
+            <div class="popup__big_slag">
+                Внимательно заполните форму, от этого зависит то, насколько быстро мы сможем вам помочь
+            </div>
+            <div class="popup__big_form">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form__line">
+                                <label for="in_product" class="form__line_label"></label>
+                                <input id="in_product" class="form__line_input" placeholder="Какой товар вы ищите?">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form__line">
+                                <label for="in_country" class="form__line_label"></label>
+                                <input id="in_country" class="form__line_input" placeholder="Предпочтение по стране изготовителя">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form__line">
+                                <label for="amount">Диапазон стоимости за штуку:</label>
+                                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                            </div>
+                            <div class="form__line mt-3 mb-3">
+                                <div id="slider-range"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form__line">
+                                <label for="in_size" class="form__line_label"></label>
+                                <input id="in_size" class="form__line_input" placeholder="Объем">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contain-line_radio">
+                                <div class="form_radio_btn">
+                                    <input id="radio-1" type="radio" name="radio" value="1">
+                                    <label for="radio-1">Мне нужен кредит</label>
+                                </div>
+
+                                <div class="form_radio_btn">
+                                    <input id="radio-2" type="radio" name="radio" value="2" checked>
+                                    <label for="radio-2">Мне не нужен кредит</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form__line">
+                                <label for="in_textarea" class="form__line_label"></label>
+                                <textarea id="in_textarea" name="text" class="form__line_textarea" placeholder="Описание товара"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form__line">
+                                <button type="submit" class="form__line_button" style="max-width: 218px;">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="backdrop"></div>
+<!-- Script JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

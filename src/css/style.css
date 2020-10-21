@@ -1111,3 +1111,18 @@ label.form__line_label {
 .contain-first {
     background-color: #F5F5F5;
 }
+
+ /* SDI */
+
+.checkout_product_img{
+    width: 100%;
+    height: auto;
+    max-width: 520px;
+    /* position: fixed; */
+}
+
+.checkout_img{
+    position: relative;
+    margin-top: 30px;
+    
+}
