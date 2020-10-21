@@ -1,0 +1,326 @@
+/*Медиазапросы */
+@media (min-width: 0) and (max-width: 1600px) {
+
+}
+
+@media (min-width: 0) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 0) and (max-width: 1366px) {
+
+}
+
+@media (min-width: 0) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 0) and (max-width: 991px) {
+    .top__line_burg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 19px;
+        height: 11px;
+        cursor: pointer;
+        position: absolute;
+        /* background-color: red; */
+    }
+
+    .top__line_burg-l1 {
+        width: 19px;
+        height: 1px;
+        background-color: #C4C4C4;
+    }
+
+    .top__line_burg-l2 {
+        width: 19px;
+        height: 1px;
+        background-color: #C4C4C4;
+    }
+
+    .top__line_burg-l3 {
+        width: 19px;
+        height: 1px;
+        background-color: #C4C4C4;
+    }
+
+    .top__line_logo {
+        margin-left: 35px;
+    }
+
+    .top__line_logo.ml-none {
+        margin-left: 0;
+    }
+
+    .top__line_menu {
+        display: flex;
+    }
+
+    .top__line_menu {
+        display: none;
+        background: #1E1E1E;
+        position: absolute;
+        top: 34px;
+        left: -15px;
+        width: calc(100% + 30px);
+        z-index: 2;
+    }
+
+    .top__line_menu.active {
+        display: flex;
+    }
+
+    .top__line_menu ul {
+        margin: 0;
+        padding: 15px 0 30px;
+    }
+
+    .top__line_menu ul li {
+        list-style-type: none;
+        padding: 7px 15px;
+    }
+
+    .top__line_menu ul li a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .horizontal__menu {
+        display: none;
+    }
+
+    .mobile-horizontal__menu {
+        display: flex;
+        position: relative;
+        height: 52px;
+    }
+
+    .mobile-horizontal__menu.active {
+        height: 100%;
+    }
+
+    .mobile-horizontal__menu-btn {
+        width: 52px;
+        height: 52px;
+        /* background: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: -15px;
+        cursor: pointer;
+    }
+
+    .mobile-horizontal__menu ul {
+        margin: 0;
+        padding: 11px 0 30px;
+    }
+
+    .mobile-horizontal__menu ul li {
+        display: none;
+        list-style-type: none;
+        margin-bottom: 34px;
+    }
+
+    .mobile-horizontal__menu.active ul li {
+        display: flex;
+    }
+
+    .mobile-horizontal__menu ul li:first-child {
+        display: flex;
+    }
+
+    .mobile-horizontal__menu ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .mobile-horizontal__menu ul li a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .mobile-horizontal__menu ul li a img {
+        margin-right: 13px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        margin: 56px 0;
+    }
+
+    .links__info {
+        width: 33.3333%;
+    }
+
+    .links__info_head {
+        margin-top: 30px;
+    }
+
+    .menu__tabs_info {
+        position: relative;
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .menu__tabs_info a {
+        margin: 0;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a.service__button {
+        width: 89px;
+        height: 30px;
+    }
+
+    .contain-tabs__info {
+        position: absolute;
+        top: 75px;
+        height: 50px;
+        overflow-y: hidden;
+        transition: height 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    #tabs_info_open_1 {
+        display: flex;
+    }
+
+    #tabs_info_open_2 {
+        display: flex;
+    }
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    a.articles__info {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    a.articles__info:nth-child(n) {
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+        margin: 8px 0;
+    }
+
+    .links__info {
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .links__info::before {
+        content: '';
+        width: 11px;
+        height: 1px;
+        display: flex;
+        background-color: #1E1E1E;
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+
+    .links__info::after {
+        content: '';
+        width: 1px;
+        height: 11px;
+        display: flex;
+        background-color: #1E1E1E;
+        position: absolute;
+        top: 15px;
+        right: 5px;
+    }
+
+    .links__info.active::after {
+        display: none;
+    }
+
+
+    .links__info_link {
+        display: none;
+    }
+
+    .links__info_head {
+        margin: 8px 0 10px;
+    }
+
+    .links__info.active .links__info_link {
+        display: flex;
+    }
+}
+
+@media (min-width: 0) and (max-width: 575px) {
+    .first__screen_head h1 {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 11px;
+    }
+
+    .first__screen_slag {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 24px;
+    }
+
+    a.articles__info {
+        min-height: 299px;
+    }
+
+    .articles__head {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 123px;
+    }
+
+    .contain-popup__big {
+        padding: 22px 34px 40px;
+    }
+
+    .form__line_button {
+        max-width: 100% !important;
+    }
+
+    .overlay {
+        align-items: flex-start;
+    }
+
+    .block__head h2 {
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    .block__slag {
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+
+@media (min-width: 0) and (max-width: 479px) {
+
+}
+
+@media (min-width: 0) and (max-width: 360px) {
+    .top__line_logo a {
+        font-size: 14px;
+    }
+
+    .top__line_link a {
+        width: 100px;
+    }
+}
