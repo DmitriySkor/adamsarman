@@ -1126,3 +1126,83 @@ label.form__line_label {
     margin-top: 30px;
     
 }
+
+.checkout_title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1E1E1E;
+    margin-top: 30px;
+    margin-bottom: 10px;   
+}
+
+.chekcout_subtitle{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    color: #1E1E1E;
+    width: 100%;
+    max-width: 460px;
+}
+
+.checkout_form__block{
+    background: #ffffff;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 14px;
+}
+
+.checkout_form__title{
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    color: #1E1E1E;
+    padding-top: 20px;
+    padding-bottom: 13px;
+}
+
+input.checkout__line_input {
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F8F8F8;
+    padding: 13px 15px 12px;
+    margin-bottom: 21px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+}
+
+label.checkout__line_label {
+    display: none;
+}
+
+.checkout__line label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.form__line_button {
+    width: 100%;
+    height: 38px;
+    border-radius: 38px;
+    border: none;
+    background-color: #0085FF;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #FFFFFF;
+    padding: 8px 0 10px;
+}
