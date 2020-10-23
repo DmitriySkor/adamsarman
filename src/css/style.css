@@ -1124,6 +1124,7 @@ label.form__line_label {
 .checkout_img{
     position: relative;
     margin-top: 30px;
+    /* position: fixed; */
     
 }
 
@@ -1145,6 +1146,10 @@ label.form__line_label {
     color: #1E1E1E;
     width: 100%;
     max-width: 460px;
+}
+
+.checkout_form{
+    margin-bottom: 100px;
 }
 
 .checkout_form__block{
@@ -1169,13 +1174,14 @@ input.checkout__line_input {
     width: 100%;
     height: 42px;
     border: none;
+    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     background-color: #F8F8F8;
     padding: 13px 15px 12px;
     margin-bottom: 21px;
     font-size: 12px;
-    font-weight: 600;
-    color: #000;
+    font-weight: 400;
+    color: #525252;
 }
 
 label.checkout__line_label {
@@ -1189,6 +1195,25 @@ label.checkout__line_label {
     line-height: 16px;
     color: #000000;
 }
+
+.checkout__line_textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 107px;
+    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    background-color: #F8F8F8;
+    padding: 12px 13px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+
+
 
 .form__line_button {
     width: 100%;

@@ -198,25 +198,78 @@
                     Внимательно заполните форму, от этого зависит то, насколько быстро мы сможем вам помочь
                 </div>
                 <div class="checkout_form">
-                <div class="checkout_form__block">   
-                    <div class="checkout_form__title">
-                        Контактная информация
-                    </div>
                     <form action="#">
-                        <div class="checkout__line">
-                            <label for="in_name" class="checkout__line_label"></label>
-                            <input id="in_name" class="checkout__line_input" placeholder="Ваше имя">
+                    <div class="checkout_form__block">
+                        <div class="checkout_form__title">
+                            Контактная информация
                         </div>
-                        <div class="checkout__line">
-                            <label for="in_phone" class="checkout__line_label"></label>
-                            <input id="in_phone" class="checkout__line_input" placeholder="Ваш телефон">
-                        </div>
-                        <div class="checkout__line">
-                            <label for="in_mail" class="checkout__line_label"></label>
-                            <input id="in_mail" class="checkout__line_input" placeholder="Ваш E-Mail">
-                        </div>
+                        
+                            <div class="checkout__line">
+                                <label for="in_name" class="checkout__line_label"></label>
+                                <input id="in_name" class="checkout__line_input" placeholder="Ваше имя">
+                            </div>
+                            <div class="checkout__line">
+                                <label for="in_phone" class="checkout__line_label"></label>
+                                <input id="in_phone" class="checkout__line_input" placeholder="Ваш телефон">
+                            </div>
+                            <div class="checkout__line">
+                                <label for="in_mail" class="checkout__line_label"></label>
+                                <input id="in_mail" class="checkout__line_input" placeholder="Ваш E-Mail">
+                            </div>
                     </div>
-                        </form>
+
+                    <div class="checkout_form__block">
+                        <div class="checkout_form__title">
+                            Информация о продукте
+                        </div>
+                        
+                            <div class="checkout__line">
+                                <label for="in_product" class="checkout__line_label"></label>
+                                <input id="in_product" class="checkout__line_input" placeholder="Какой товар вы ищете?">
+                            </div>
+                            <div class="checkout__line">
+                                <label for="in_country" class="checkout__line_label"></label>
+                                <input id="in_country" class="checkout__line_input" placeholder="Предпочтение по стране изготовителя">
+                            </div>
+                            <div class="checkout__line">
+                                <label for="in_textarea" class="form__line_label"></label>
+                                <textarea id="in_textarea" name="text" class="checkout__line_textarea" placeholder="Описание товара"></textarea>
+                            </div>
+                    </div>
+                    
+                    <div class="checkout_form__block">
+                        <div class="checkout_form__title">
+                            Количество и стоимость
+                        </div>
+                        <div class="checkout__line">
+                            <label for="in_size" class="checkout__line_label"></label>
+                            <input id="in_size" class="checkout__line_input" placeholder="Объем">
+                        </div>
+                           
+                    </div>
+
+                    <div class="checkout_form__block">
+                        <div class="checkout_form__title">
+                            Дополнительно
+                        </div>
+                        <div class="contain-line_radio">
+                            <div class="form_radio_btn">
+                                <input id="radio-1" type="radio" name="radio" value="1">
+                                <label for="radio-1">Мне нужен кредит</label>
+                            </div>
+
+                            <div class="form_radio_btn">
+                                <input id="radio-2" type="radio" name="radio" value="2" checked>
+                                <label for="radio-2">Мне не нужен кредит</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="form__line">
+                            <button type="submit" class="form__line_button" style="max-width: 218px;">Офоррмить заказ</button>
+                    
+                    </div>
                     </form>
                 </div>
             </div>
