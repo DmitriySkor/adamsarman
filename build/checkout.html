@@ -247,15 +247,28 @@
                         </div>
                         
                         <div class="checkout__line">
+                            
                             <label for="in_size" class="checkout__line_label"></label>
                             <input id="in_size" class="checkout__line_input" placeholder="Объем">
                         </div>
-                        <div class="form__line">
+                        <!-- <div class="form__line">
                             <label for="amount">Диапазон стоимости за штуку:</label>
                             <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
                         </div>
                         <div class="form__line pt-3 pb-3">
                             <div id="slider-range"></div>
+                        </div> -->
+                        <div class="form__line">
+                            <label for="range_amount">Диапазон стоимости за штуку:</label>
+                            <div class="range_input__wrap">
+                                
+                            <input type="text" id="range_amount" class="sliderValue range_input" data-index="0" value="10" />
+                             <p>-</p> 
+                            <input type="text" class="sliderValue range_input" data-index="1" value="90" />
+                        </div>
+                        </div>
+                        <div class="form__line range_block" pt-3 pb-3>
+                             <div id="slider"></div>
                         </div>
 
                     </div>

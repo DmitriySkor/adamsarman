@@ -1292,3 +1292,40 @@ label.checkout__line_label {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+.range_block{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.range_input__wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.range_block .ui-slider-horizontal{
+    height: 2px !important;
+    background: #EAEAEA;
+}
+
+.range_block .ui-slider-handle.ui-corner-all.ui-state-default{
+    border: 6px solid #0085FF !important;
+    outline: none;
+}
+
+
+input.range_input {
+    width: 37%;
+    height: 42px;
+    border: none;
+    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    background-color: #F8F8F8;
+    padding: 13px 15px 12px;
+    margin-bottom: 21px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #525252;
+}

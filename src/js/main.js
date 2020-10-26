@@ -1,3 +1,22 @@
+$(document).ready(function() {
+    $("#slider").slider({
+        min: 0,
+        max: 10000,
+        step: 1,
+        values: [1250, 5500],
+        slide: function(event, ui) {
+            for (var i = 0; i < ui.values.length; ++i) {
+                $("input.sliderValue[data-index=" + i + "]").val(ui.values[i]);
+            }
+        }
+    });
+
+    $("input.sliderValue").change(function() {
+        var $this = $(this);
+        $("#slider").slider("values", $this.data("index"), $this.val());
+    });
+});
+
 $(function () {
     $("#slider-range").slider({
         range: true,
