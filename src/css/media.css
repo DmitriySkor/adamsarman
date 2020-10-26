@@ -263,6 +263,10 @@
     .links__info.active .links__info_link {
         display: flex;
     }
+
+    .checkout_img{
+        display: none;
+    }
 }
 
 @media (min-width: 0) and (max-width: 575px) {
